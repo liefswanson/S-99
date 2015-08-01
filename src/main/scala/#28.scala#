@@ -4,5 +4,6 @@ object P28 {
   def lSort[A](ls:List[List[A]]): List[List[A]] =
     ls sortWith {_.length < _.length}
 
-  def lFreqSort[A](ls:List[List[A]]): List[List[A]] = 
+  def lFreqSort[A](ls:List[List[A]]): List[List[A]] =
+
 }

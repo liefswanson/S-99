@@ -1,10 +1,8 @@
 object P22 {
   def range(a:Int, b:Int):List[Int] = {
     val iterate =
-      if(a > b)
-        (x:Int) => x + 1
-      else
-        (x:Int) => x - 1
+      if(a > b) (x:Int) => x + 1
+      else      (x:Int) => x - 1
       
     def rangeHelper(a:Int, b:Int, ls:List[Int]):List[Int] = b-a match {
       case 0 => b::ls
